@@ -52,16 +52,18 @@ body
 
 .ProductDetailTitle
 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 .ProductDetails
 {
-    font-size: 18px;
     color: white;
-    line-height: 30px;
+    font-size: 16px;    
+    line-height: 25px;
+    text-align: center;
 }
 
 .RegisterBtnWrapper
@@ -75,6 +77,8 @@ body
     font-size: 20px;
     cursor: pointer;
     color: hsl(257, 40%, 49%);
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 .RegisterBtnWrapper:hover
@@ -93,9 +97,7 @@ footer
 .FooterIconWrapper
 {
     width:200px;
-    position: absolute;
-    right: 0px;
-    top: 20px;
+    margin: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -136,11 +138,36 @@ footer
     .col-s-9 {width: 75%;}
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}    
-
+    .col-s-12 {width: 100%;}  
+    
     [class*="col-"] {
         float: left;        
       }
+
+    .ProductDetailTitle
+    {
+        font-size: 40px;      
+        text-align: left;  
+    }
+
+    .ProductDetails
+    {
+        font-size: 18px;        
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .FooterIconWrapper
+    {
+        position: absolute;        
+        top: 20px;
+        right: 0px;
+    }
+
+    .RegisterBtnWrapper
+    {
+        margin:0;  
+    }
 }
   
 @media only screen and (min-width: 1000px)
