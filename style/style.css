@@ -28,17 +28,16 @@ body {
 	margin-left: 50px;
 }
 
-.ProductDetailsWrapper {
-	height: 500px;
+.ProductDetailsWrapper {	
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 
 .ProductContentWrapper {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	width: 80%;
-	height: 350px;
-	justify-content: space-around;
+	width: 80%;		
 }
 
 .ProductDetailTitle {
@@ -53,20 +52,30 @@ body {
 	font-size: 16px;
 	line-height: 25px;
 	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .RegisterBtnWrapper {
-	height: 60px;
-	width: 200px;
+	height: 50px;
+	width: 80%;
 	background-color: white;
 	border-radius: 35px;
-	text-align: center;
-	padding-top: 17px;
-	font-size: 20px;
+	text-align: center;		
 	cursor: pointer;
-	color: hsl(257, 40%, 49%);
+	color: hsl(257, 40%, 49%);	
+	display: flex;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.RegisterBtn
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: 25px;
+	font-size: 16px;
 }
 
 .RegisterBtnWrapper:hover {
@@ -152,6 +161,11 @@ footer {
 		font-size: 40px;
 		text-align: left;
 	}
+
+	.ProductDetailsWrapper {
+		margin-top: 0px;
+	}
+
 	.ProductDetails {
 		font-size: 18px;
 		line-height: 30px;
@@ -162,9 +176,10 @@ footer {
 		top: 20px;
 		right: 0px;
 	}
+	
 	.RegisterBtnWrapper {
-		margin: 0;
-	}
+		width: 45%;
+	}	
 }
 
 @media only screen and (min-width: 1000px) {
@@ -204,5 +219,11 @@ footer {
 	}
 	.col-12 {
 		width: 100%;
+	}
+
+
+	.RegisterBtnWrapper {
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
