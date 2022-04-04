@@ -103,6 +103,12 @@ footer {
     cursor: pointer;
 }
 
+.FooterIcon:hover {	
+	filter: invert(73%) sepia(66%) saturate(1122%) hue-rotate(242deg) brightness(95%) contrast(91%);    
+}
+
+
+
 .row::after {
 	content: "";
 	clear: both;
